@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculadora
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label>Número 1</ion-label>
+        <ion-input type="text" [(ngModel)]="number1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Número 2</ion-label>
+          <ion-input type="text" [(ngModel)]="number2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <button ion-button color="secondary" (click)="somar()">Somar</button>
+          <button ion-button color="secondary" (click)="subtrair()">Subtrair</button>
+          <button ion-button color="secondary" (click)="multiplicar()">Multiplicar</button>
+          <button ion-button color="secondary" (click)="dividir()">Dividir</button>
+      </ion-item>
+    </ion-list>
+
+</ion-content>

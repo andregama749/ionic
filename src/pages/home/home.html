@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home Simpson</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="texto"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <p>
+    <button ion-button color="secondary" (click)="mostrar()">Enviar</button>
+  </p>
+</ion-content>
